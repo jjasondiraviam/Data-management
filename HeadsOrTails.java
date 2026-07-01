@@ -8,7 +8,6 @@ public class HeadsOrTails {
 
         System.out.println("Tossing a coin...");
         for (int i = 1; i <= 3; i++) {
-            
             String result = rand.nextBoolean() ? "Heads" : "Tails";
             System.out.println("Round " + i + ": " + result);
             
@@ -19,5 +18,12 @@ public class HeadsOrTails {
             }
         }
         System.out.println("Heads: " + headsCount + ", Tails: " + tailsCount);
+
+        
+        if (headsCount > tailsCount) {
+            System.out.println("You won");
+        } else {
+            System.out.println("You lost");
+        }
     }
 }
